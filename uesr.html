@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./css/in.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css"
+		/>
+		<link rel="stylesheet" href="./css/user.css" />
+		<script>
+			document.documentElement.style.fontSize =
+				document.documentElement.clientWidth / 7.5 + 'px'
+		</script>
+	</head>
+	<body>
+		<div class="wrap">
+			<header>
+				<div class="banner">
+					<img src="./images/neirong_02.jpg" alt="" />
+					<a class="return" href="./home.html"
+						><i class="fa fa-arrow-left" aria-hidden="true"></i
+					></a>
+					<a class="see">关注</a>
+					<a class="see">已关注</a>
+					<div class="head">
+						<img src="./images/u153111_13.jpg" alt="" />
+						<p>毛毛</p>
+					</div>
+				</div>
+				<p>浮世绘</p>
+				<div class="content">
+					<h3>我更喜欢努力的自己</h3>
+					<time>2017/5/20</time>
+					<p>
+						你知道，故事的结尾并不重要，生获唯一确保我们的就是死亡。<br />所以我们最好不要让那
+						结尾，夺走了我们最后的时光。<br />这大概是钱德勒《最后的告白》里最红的句子把。<br />这也是今天看到一粉丝的留言后，第一时间想到的一句话。
+					</p>
+				</div>
+				<p>浮世绘</p>
+				<div class="content">
+					<h3>小兔子乖乖</h3>
+					<time>2018/5/20</time>
+					<p>
+						小兔子乖乖。<br />把门开开。<br />不开不开，我不开。<br />妈妈没回来，谁来也不开。
+					</p>
+				</div>
+			</header>
+			<footer>
+				<a><i class="fa fa-heart-o" aria-hidden="true"> </i><span>423</span></a>
+				<a href=""><i class="fa fa-file-text-o" aria-hidden="true"> 23</i></a>
+				<a href=""
+					><i class="fa fa-share-square-o" aria-hidden="true"> 34</i></a
+				>
+			</footer>
+		</div>
+		<script src="./js/zepto.min.js"></script>
+		<script src="./js/touch.js"></script>
+		<script src="./js/fx.js"></script>
+		<script src="./js/fxmod.js"></script>
+		<script>
+			$('.wrap > header > .banner > .see').tap(function() {
+				$(this).css('display', 'none')
+				$('.wrap > header > .banner > .see:nth-child(4)').css(
+					'display',
+					'block'
+				)
+			})
+			$('.wrap > header > .banner>.see:nth-child(4)').tap(function() {
+				$(this).css('display', 'none')
+				$('.wrap > header > .banner > .see:nth-child(3)').css(
+					'display',
+					'block'
+				)
+			})
+			$('footer>a:first-child').tap(function() {
+				var text = $(this).text()
+				if (text * 1 === 423) {
+					var te = text * 1 + 1
+					$('footer>a:first-child>span').text(te)
+					$('footer>a:first-child>i').attr('class', 'fa fa-heart')
+					$('footer>a:first-child>i').css
+				} else if (text * 1 === 424) {
+					var re = text * 1 - 1
+					$('footer>a:first-child>span').text(re)
+					$('footer>a:first-child>i').attr('class', 'fa fa-heart-o')
+				}
+			})
+		</script>
+	</body>
+</html>

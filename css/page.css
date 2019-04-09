@@ -1,0 +1,145 @@
+.wrap {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+}
+header {
+	flex-shrink: 0;
+	width: 100%;
+	background: linear-gradient(#1e9496, #36f0bf);
+	z-index: 10000;
+	padding: 0.3rem 0;
+}
+header > div {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.1rem 0;
+}
+header > div > a {
+	font-size: 0.3rem;
+	color: teal;
+	text-decoration: none;
+}
+header > div > span {
+	font-size: 0.3rem;
+	margin: 0 auto;
+	color: teal;
+}
+section {
+	width: 100%;
+	overflow: auto;
+	flex-shrink: 1;
+	flex-grow: 1;
+}
+section > .swipper {
+	width: 100%;
+	margin-top: 0.2rem;
+	border-bottom: 0.1rem solid rgb(240, 238, 238);
+}
+section > .swipper > .mes > span {
+	display: block;
+	font-size: 0.24rem;
+	color: teal;
+	margin-bottom: 0.2rem;
+	margin-left: 5%;
+	float: left;
+	border-left: 2px solid teal;
+	padding-left: 0.1rem;
+}
+section > .swipper > .mes > a {
+	display: block;
+	font-size: 0.3rem;
+	color: teal;
+	margin-bottom: 0.2rem;
+	margin-left: 5%;
+	float: right;
+	margin-right: 5%;
+	text-decoration: none;
+}
+section > .swipper > .pic {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+section > .swipper > .pic > img {
+	display: block;
+	width: 2.4rem;
+	height: 1.8rem;
+	margin-top: 0.1rem;
+}
+section > .swipper > .mid {
+	width: 90%;
+	margin: 0 auto;
+}
+section > .swipper > .mid > .word {
+	width: 65%;
+	float: left;
+	margin-left: 0.24rem;
+}
+section > .swipper > .mid > .word > h3 {
+	font-size: 0.36rem;
+	font-weight: bolder;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	color: #000;
+	margin-bottom: 0.2rem;
+}
+section > .swipper > .mid > .word > p {
+	font-size: 0.2rem;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	color: #868686;
+	margin-bottom: 0.6rem;
+}
+section > .swipper > .mid > .pic {
+	width: 30%;
+	float: left;
+}
+section > .swipper > .mid > .pic > img {
+	width: 100%;
+}
+section > .swipper > .mid > .word > .read {
+	float: right;
+	margin-right: 0.24rem;
+}
+section > .swipper > .mid > .word > .read > i {
+	font-size: 0.2rem;
+	display: block;
+	float: left;
+	color: #c0c0c0;
+	margin-right: 0.1rem;
+}
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.2rem 0;
+	background-color: #fff;
+	flex-shrink: 0;
+}
+footer > a > img {
+	width: 0.5rem;
+	height: 0.8rem;
+}
+footer > a:first-child > img {
+	margin-left: 0.5rem;
+}
+footer > a:last-child > img {
+	margin-right: 0.5rem;
+}
+footer > a:nth-child(3) > img {
+	width: 0.8rem;
+}

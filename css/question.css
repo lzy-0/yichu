@@ -1,0 +1,86 @@
+.wrap {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+}
+header {
+	flex-shrink: 0;
+	width: 100%;
+	background: linear-gradient(#1e8f93, #1cf5e4);
+	z-index: 10000;
+	align-items: center;
+	padding: 0.3rem 0;
+}
+header > .content {
+	padding-top: 0.2rem;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+header > .content > a {
+	text-decoration: none;
+	font-size: 0.3rem;
+	color: teal;
+}
+section {
+	width: 100%;
+	overflow: auto;
+	flex-shrink: 1;
+	flex-grow: 1;
+	background-color: rgb(231, 229, 229);
+}
+section > .content {
+	padding-top: 0.5rem;
+	width: 100%;
+	background-color: #fff;
+	padding-bottom: 0.2rem;
+	margin-bottom: 0.3rem;
+}
+section > .content > .top,
+section > .content > .mid,
+section > .content > .down {
+	width: 90%;
+	margin: 0 auto;
+}
+section > .content > .top,
+section > .content > .mid {
+	margin-bottom: 0.2rem;
+}
+section > .content > .top > h3 {
+	font-size: 0.4rem;
+	font-family: serif;
+	float: left;
+	margin-right: 0.2rem;
+}
+section > .content > .top > p {
+	font-size: 0.2rem;
+	color: teal;
+	float: left;
+	margin-top: 0.1rem;
+}
+section > .content > .mid > span {
+	font-size: 0.3rem;
+	display: block;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	line-height: 0.4rem;
+	font-family: serif;
+}
+section > .content > .down > span,
+section > .content > .down > p {
+	font-size: 0.2rem;
+	float: left;
+	color: #ccc;
+}
+section > .content > .down > p {
+	font-size: 0.2rem;
+	float: right;
+	color: #ccc;
+}

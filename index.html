@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Document</title>
+		<script>
+			document.documentElement.style.fontSize =
+				document.documentElement.clientWidth / 7.5 + 'px'
+		</script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/css/swiper.css"
+		/>
+		<link rel="stylesheet" href="./css/in.css" />
+		<link rel="stylesheet" href="./css/index.css" />
+	</head>
+	<body>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="./images/1.jpg" alt="" />
+					<a href="./login.html">跳过</a>
+				</div>
+				<div class="swiper-slide">
+					<img src="./images/2.jpg" alt="" />
+					<a href="./login.html">跳过</a>
+				</div>
+				<div class="swiper-slide">
+					<img src="./images/3.jpg" alt="" />
+					<a href="./login.html">跳过</a>
+				</div>
+				<div class="swiper-slide">
+					<img src="./images/4.jpg" alt="" />
+					<a class="login" href="./login.html">来到一处</a>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.2/js/swiper.js"></script>
+		<script>
+			var mySwiper = new Swiper('.swiper-container', {
+				direction: 'horizontal',
+				loop: false
+			})
+		</script>
+	</body>
+</html>

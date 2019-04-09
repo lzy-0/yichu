@@ -1,0 +1,203 @@
+.wrap {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+}
+header {
+	flex-shrink: 0;
+	width: 100%;
+	background: linear-gradient(#0cceda, #1cf5e4);
+	z-index: 10000;
+	align-items: center;
+	padding: 0.3rem 0;
+}
+header > .content {
+	padding-top: 0.2rem;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+header > .content > a {
+	text-decoration: none;
+	font-size: 0.3rem;
+	color: white;
+}
+section {
+	width: 100%;
+	overflow: auto;
+	flex-shrink: 1;
+	flex-grow: 1;
+}
+section > .top-inner {
+	height: 28%;
+	background-color: #1cf5e4;
+	border-bottom-left-radius: 0.5rem;
+	border-bottom-right-radius: 0.5rem;
+	padding-top: 0.3rem;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 0.3rem;
+}
+section > .top-inner > .top {
+	width: 80%;
+	margin: 0 auto;
+}
+section > .top-inner > .pos {
+	width: 1.1rem;
+	position: absolute;
+	right: 0rem;
+	top: 25%;
+	border: 1px solid teal;
+	border-top-left-radius: 0.25rem;
+	border-bottom-left-radius: 0.25rem;
+	opacity: 0.3;
+	padding: 0.02rem;
+}
+section > .top-inner > .pos > a {
+	width: 100%;
+	font-size: 0.3rem;
+	display: block;
+	background-color: #000;
+	text-decoration: none;
+	color: white;
+	padding-left: 0.1rem;
+	border-top-left-radius: 0.25rem;
+	border-bottom-left-radius: 0.25rem;
+	border: 1px solid teal;
+}
+section > .top-inner > .pos > a > img {
+	width: 0.3rem;
+	margin-right: 0.1rem;
+}
+section > .top-inner > .top > .head {
+	float: left;
+	margin-right: 0.2rem;
+}
+section > .top-inner > .top > .head > img {
+	width: 1.2rem;
+	border-radius: 50%;
+}
+section > .top-inner > .top > .name {
+	float: left;
+}
+section > .top-inner > .top > .name > span {
+	font-size: 0.3rem;
+	display: block;
+	margin-top: 0.2rem;
+	color: white;
+	margin-bottom: 0.1rem;
+}
+section > .top-inner > .top > .name > p {
+	font-size: 0.2rem;
+	color: teal;
+}
+section > .top-inner > .top > .three {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+section > .top-inner > .top > .three > div {
+	text-align: center;
+}
+section > .top-inner > .top > .three > div > span {
+	font-size: 0.3rem;
+	color: teal;
+	display: block;
+	margin-top: 0.3rem;
+}
+section > .top-inner > .top > .three > div > p {
+	font-size: 0.14rem;
+	color: teal;
+}
+section > .my-one {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.3rem;
+}
+section > .my-one > span {
+	font-size: 0.3rem;
+	color: rgb(119, 117, 117);
+}
+section > .my-one > a {
+	font-size: 0.3rem;
+	text-decoration: none;
+	color: rgb(119, 117, 117);
+}
+section > .pic {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.3rem;
+}
+section > .pic > div {
+	text-align: center;
+	width: 30%;
+}
+section > .pic > div > img {
+	width: 100%;
+	border: 1px solid #ccc;
+}
+section > .pic > div > span {
+	font-size: 0.3rem;
+	display: block;
+	color: rgb(119, 117, 117);
+}
+section > a > .page {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 0.3rem;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 0.1rem;
+}
+section > a > .page > img {
+	width: 0.5rem;
+	float: left;
+	margin-right: 0.1rem;
+}
+section > a > .page > h3 {
+	font-size: 0.3rem;
+	float: left;
+	margin-top: 0.04rem;
+	margin-right: 0.2rem;
+	color: #000;
+}
+section > a > .page > span {
+	font-size: 0.2rem;
+	float: left;
+	margin-top: 0.08rem;
+	color: rgb(119, 117, 117);
+}
+section > a > .page > p {
+	font-size: 0.3rem;
+	float: right;
+	margin-top: 0.04rem;
+	color: rgb(119, 117, 117);
+}
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.2rem 0;
+	background-color: #fff;
+	flex-shrink: 0;
+}
+footer > a > img {
+	width: 0.5rem;
+	height: 0.8rem;
+}
+footer > a:first-child > img {
+	margin-left: 0.5rem;
+}
+footer > a:last-child > img {
+	margin-right: 0.5rem;
+}
+footer > a:nth-child(3) > img {
+	width: 0.8rem;
+}

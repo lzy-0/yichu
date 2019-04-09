@@ -1,0 +1,116 @@
+.wrap {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+}
+header {
+	flex-shrink: 0;
+	width: 100%;
+	background: linear-gradient(#1e9496, #36f0bf);
+	z-index: 10000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.3rem 0;
+}
+header > div {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+
+header > div > a {
+	font-size: 0.2rem;
+	text-decoration: none;
+	color: teal;
+}
+header > div > a > .fa {
+	font-size: 0.3rem;
+	margin-top: 0.1rem;
+}
+header > div > .name {
+	display: block;
+	padding: 0.1rem 0.2rem;
+	border: 1px solid teal;
+	border-radius: 0.3rem;
+}
+section {
+	width: 100%;
+	overflow: auto;
+	flex-shrink: 1;
+	flex-grow: 1;
+}
+section > .word {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+}
+section > .word > p {
+	font-size: 0.4rem;
+	color: rgb(18, 196, 196);
+	font-family: serif;
+}
+section > .word > span {
+	font-size: 0.3rem;
+	color: rgb(18, 196, 196);
+	display: block;
+	margin-left: 85%;
+	margin-top: 0.1rem;
+	font-family: serif;
+}
+section > .bbs {
+	width: 90%;
+	margin: 0 auto;
+}
+section > .bbs > textarea {
+	width: 100%;
+	height: 6rem;
+	resize: none;
+	outline: none;
+	border: 0;
+	background-color: #cdeae5;
+	border-radius: 0.1rem;
+}
+section > .fb {
+	width: 90%;
+	margin: 0 auto;
+}
+section > .fb > a {
+	float: right;
+	font-size: 0.2rem;
+	text-decoration: none;
+	display: block;
+	padding: 0.1rem 0.2rem;
+	border: 1px solid teal;
+	border-radius: 0.2rem;
+}
+footer {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.2rem 0;
+	background-color: #fff;
+	flex-shrink: 0;
+	display: flex;
+	justify-content: space-between;
+}
+footer > a {
+	margin-top: 0.1rem;
+	font-size: 0.3rem;
+	text-decoration: none;
+	color: teal;
+}
+footer > input {
+	border: none;
+	outline: none;
+}
+footer > a > .fa {
+	font-size: 0.6rem;
+	color: teal;
+}

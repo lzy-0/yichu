@@ -1,0 +1,46 @@
+.swiper-container {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+	overflow: hidden;
+}
+.swiper-wrapper {
+	width: 100%;
+	height: 100%;
+}
+.swiper-container > .swiper-wrapper > .swiper-slide {
+	width: 100%;
+	float: left;
+	position: relative;
+	height: 100%;
+}
+.swiper-slide > img {
+	width: 100%;
+	height: 100%;
+}
+.swiper-container > .swiper-wrapper > .swiper-slide > a {
+	display: block;
+	font-size: 0.3rem;
+	position: absolute;
+	top: 0.5rem;
+	right: 0.6rem;
+	-webkit-tap-highlight-color: rgba(255, 0, 0, 0);
+	text-decoration: none;
+	color: #fffffb;
+	display: block;
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 0.05rem 0.2rem;
+	border-radius: 0.3rem;
+}
+.swiper-container > .swiper-wrapper > .swiper-slide > .login {
+	left: 2.7rem;
+	top: 9.5rem;
+	width: 1.8rem;
+	font-size: 0.4rem;
+	padding: 0.1rem 0.2rem;
+	text-align: center;
+	background-color: #50baac;
+	opacity: 0.5;
+}

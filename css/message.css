@@ -1,0 +1,212 @@
+.wrap {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+}
+header {
+	flex-shrink: 0;
+	width: 100%;
+	background: linear-gradient(#1e9496, #36f0bf);
+	z-index: 10000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.3rem 0;
+}
+header > .dynamic {
+	font-size: 0.3rem;
+	color: #d7faf2;
+	margin-left: 2rem;
+	text-align: center;
+	text-decoration: none;
+}
+header > .dynamic > p {
+	font-size: 0.1rem;
+}
+header > .chat {
+	font-size: 0.3rem;
+	color: #109a7e;
+	margin-right: 2rem;
+	text-align: center;
+	text-decoration: none;
+}
+header > .chat > p {
+	font-size: 0.1rem;
+}
+section {
+	width: 100%;
+	overflow: auto;
+	flex-shrink: 1;
+	flex-grow: 1;
+}
+section > .all {
+	width: 100%;
+	padding-bottom: 0.2rem;
+	margin-top: 0.2rem;
+	border-bottom: 0.1rem solid rgb(240, 238, 238);
+}
+section > .all > span {
+	display: block;
+	font-size: 0.3rem;
+	color: #ccc;
+	margin-bottom: 0.2rem;
+	margin-left: 5%;
+}
+section > .all > .pic {
+	float: left;
+	width: 25%;
+	position: relative;
+	margin-right: 10%;
+	margin-left: 5%;
+}
+section > .all > .pic > img {
+	width: 100%;
+}
+section > .all > .pic > div {
+	width: 0.2rem;
+	height: 0.2rem;
+	border-radius: 50%;
+	position: absolute;
+	top: -0.1rem;
+	right: -0.1rem;
+	background-color: rgb(163, 163, 36);
+	border: 2px solid #fff;
+}
+section > .all > .word {
+	float: left;
+	width: 50%;
+	margin-right: 5%;
+}
+section > .all > .word > h4 {
+	font-size: 0.3rem;
+	margin-bottom: 0.1rem;
+}
+section > .all > .word > span {
+	font-size: 0.3rem;
+	color: #ccc;
+	display: block;
+}
+section > .all > .word > p {
+	font-size: 0.2rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.1rem;
+	color: rgb(228, 218, 218);
+}
+section > .swipper {
+	width: 100%;
+	padding-bottom: 0.4rem;
+	margin-top: 0.2rem;
+	border-bottom: 0.1rem solid rgb(240, 238, 238);
+}
+section > .swipper > .mes > span {
+	display: block;
+	font-size: 0.3rem;
+	color: #ccc;
+	margin-bottom: 0.2rem;
+	margin-left: 5%;
+	float: left;
+}
+section > .swipper > .mes > a {
+	display: block;
+	font-size: 0.3rem;
+	color: #ccc;
+	margin-bottom: 0.2rem;
+	margin-left: 5%;
+	float: right;
+	margin-right: 5%;
+	text-decoration: none;
+}
+section > .swipper > .pic {
+	width: 90%;
+	overflow: scroll;
+	margin: 0 auto;
+}
+section > .swipper > .pic > div {
+	width: 9.4rem;
+}
+section > .swipper > .pic > div > div {
+	height: 100%;
+	float: left;
+	margin-right: 0.2rem;
+	text-align: center;
+}
+section > .swipper > .pic > div > div:last-child {
+	margin-right: 0;
+}
+section > .swipper > .pic > div > div > img {
+	width: 3rem;
+}
+section > .swipper > .pic > div > div > span {
+	display: block;
+	font-size: 0.3rem;
+}
+section > .swipper > .pic > div > div > p {
+	display: block;
+	font-size: 0.2rem;
+	color: #ccc;
+}
+section > .language > .top {
+	width: 100%;
+}
+section > .language > .top > .head {
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 0.2rem;
+}
+section > .language > .top > span {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 0.2rem;
+	display: block;
+	margin-top: -0.2rem;
+	margin-bottom: 0.3rem;
+}
+section > .language > .top > .head > img {
+	width: 0.5rem;
+	float: left;
+	margin-right: 0.1rem;
+}
+section > .language > .top > .head > img:last-child {
+	float: right;
+	width: 0.8rem;
+	margin-right: 0;
+}
+section > .language > .top > .head > span {
+	font-size: 0.2rem;
+	float: left;
+	line-height: 0.5rem;
+	display: block;
+	color: #949494;
+}
+section > .language > article {
+	font-size: 0.2rem;
+	width: 90%;
+	margin: 0 auto;
+	color: #949494;
+	font-size: 0.28rem;
+	line-height: 0.5rem;
+}
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.2rem 0;
+	background-color: #fff;
+	flex-shrink: 0;
+}
+footer > a > img {
+	width: 0.5rem;
+	height: 0.8rem;
+}
+footer > a:first-child > img {
+	margin-left: 0.5rem;
+}
+footer > a:last-child > img {
+	margin-right: 0.5rem;
+}
+footer > a:nth-child(3) > img {
+	width: 0.8rem;
+}

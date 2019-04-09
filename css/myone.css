@@ -1,0 +1,58 @@
+.wrap {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+}
+header {
+	flex-shrink: 0;
+	width: 100%;
+	background: linear-gradient(#1e8f93, #1cf5e4);
+	z-index: 10000;
+	align-items: center;
+	padding: 0.3rem 0;
+}
+header > .content {
+	padding-top: 0.2rem;
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+header > .content > a {
+	text-decoration: none;
+	font-size: 0.3rem;
+	color: teal;
+}
+header > .content > a > i {
+	margin-right: 0.2rem;
+}
+section {
+	width: 100%;
+	overflow: auto;
+	flex-shrink: 1;
+	flex-grow: 1;
+}
+section > .content {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+section > .content > div {
+	margin-top: 0.5rem;
+	width: 3.2rem;
+	height: 3.5rem;
+	text-align: center;
+}
+section > .content > div > img {
+	width: 3.2rem;
+	height: 3.2rem;
+}
+section > .content > div > span {
+	font-size: 0.3rem;
+	display: block;
+}

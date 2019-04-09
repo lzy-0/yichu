@@ -1,0 +1,203 @@
+.wrap {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+}
+header {
+	flex-shrink: 0;
+	width: 100%;
+	background: linear-gradient(#1e9496, #36f0bf);
+	z-index: 10000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.3rem 0;
+}
+header > div {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+header > div > a {
+	font-size: 0.3rem;
+	text-decoration: none;
+	color: teal;
+}
+header > div > a > .fa {
+	font-size: 0.3rem;
+	margin-top: 0.1rem;
+}
+header > div > .name {
+	margin: 0 auto;
+	display: block;
+	padding: 0.1rem 0.2rem;
+}
+/* -----------------------------------------------------header结束 */
+/* -----------------------------------------------------section开始 */
+/* -----------------------------------------------------section-swiper开始 */
+.swiper-container {
+	width: 99%;
+	height: 4.2rem;
+	overflow: hidden;
+	margin: 0 auto;
+	border: 2px solid #ccc;
+	margin-bottom: 0.3rem;
+}
+.swiper-wrapper {
+	width: 100%;
+}
+.swiper-container > .swiper-wrapper > .swiper-slide {
+	width: 100%;
+	float: left;
+	position: relative;
+	height: 100%;
+}
+.swiper-slide > img {
+	width: 100%;
+	height: 100%;
+}
+/* -----------------------------------------------------section-swiper结束 */
+/* -----------------------------------------------------section-player开始 */
+
+section {
+	width: 100%;
+	overflow: auto;
+	flex-shrink: 1;
+	flex-grow: 1;
+}
+section > .nav {
+	width: 30%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+section > .nav > a {
+	display: block;
+	font-size: 0.36rem;
+	font-family: serif;
+	float: left;
+	text-decoration: none;
+	color: #ccc;
+}
+section > .nav > a:first-child {
+	border-bottom: 3px solid teal;
+	color: #000;
+}
+/* -----------------------------------------------------section-player结束 */
+/* -----------------------------------------------------section-article开始 */
+section > article {
+	width: 100%;
+	margin-top: 0.2rem;
+	border-bottom: 0.2rem solid #f8f8f8;
+}
+section > article > a > .top {
+	margin-bottom: 0.14rem;
+}
+section > article > a > .top > .logo {
+	float: left;
+}
+section > article > a > .top > .logo > span {
+	font-size: 0.2rem;
+	display: block;
+	margin-left: 0.24rem;
+	border-left: 2px solid teal;
+	padding-left: 0.1rem;
+	color: teal;
+}
+section > article > a > .top > .uesr {
+	float: right;
+	margin-right: 0.24rem;
+}
+section > article > a > .top > .uesr > span {
+	font-size: 0.2rem;
+	display: block;
+	float: left;
+	margin-right: 0.1rem;
+	line-height: 0.5rem;
+	color: #000;
+}
+section > article > a > .top > .uesr > img {
+	width: 0.5rem;
+	display: block;
+	float: left;
+}
+section > article > a > .mid > .word {
+	width: 50%;
+	float: left;
+	margin-left: 0.24rem;
+}
+section > article > a > .mid > .word > h3 {
+	font-size: 0.36rem;
+	font-weight: bolder;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	color: #000;
+	margin-bottom: 0.3rem;
+}
+section > article > a > .mid > .word > p {
+	font-size: 0.2rem;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	color: #868686;
+}
+section > article > a > .mid > .pic {
+	width: 40%;
+	float: right;
+	margin-right: 0.24rem;
+}
+section > article > a > .mid > .pic > img {
+	width: 70%;
+	float: right;
+}
+section > article > a > .buttom {
+	width: 100%;
+	margin-top: 0.2rem;
+}
+section > article > a > .buttom > .time {
+	font-size: 0.1rem;
+	color: #c0c0c0;
+	float: left;
+	margin-left: 0.24rem;
+}
+section > article > a > .buttom > .read {
+	float: right;
+	margin-right: 0.24rem;
+}
+section > article > a > .buttom > .read > i {
+	font-size: 0.2rem;
+	display: block;
+	float: left;
+	color: #c0c0c0;
+	margin-right: 0.1rem;
+}
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.2rem 0;
+	background-color: #fff;
+	flex-shrink: 0;
+}
+footer > a > img {
+	width: 0.5rem;
+	height: 0.8rem;
+}
+footer > a:first-child > img {
+	margin-left: 0.5rem;
+}
+footer > a:last-child > img {
+	margin-right: 0.5rem;
+}
+footer > a:nth-child(3) > img {
+	width: 0.8rem;
+}

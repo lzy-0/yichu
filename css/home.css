@@ -1,0 +1,226 @@
+.wrap {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+}
+header {
+	flex-shrink: 0;
+	width: 100%;
+	background: linear-gradient(#1e9496, #36f0bf);
+	z-index: 10000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.3rem 0;
+}
+header > .weather {
+	display: flex;
+	align-items: center;
+}
+header > .weather > img {
+	width: 0.7rem;
+	color: red;
+	float: left;
+	margin-left: 0.14rem;
+}
+header > .weather > .time {
+	float: left;
+}
+header > .weather > .time > span {
+	font-size: 0.2rem;
+	display: block;
+	color: #fff;
+	opacity: 0.5;
+}
+header > .weather > .time > p {
+	font-size: 0.1rem;
+	display: block;
+	color: #11b290;
+}
+header > .logo {
+	width: 1rem;
+	margin: 0 auto;
+}
+header > .logo > span {
+	display: block;
+	font-size: 0.3rem;
+	color: #fff;
+	opacity: 0.5;
+}
+header > .logo > p {
+	display: block;
+	font-size: 0.1rem;
+	color: #11b290;
+	font-weight: lighter;
+}
+header > a > .fa {
+	display: block;
+	font-size: 0.5rem;
+	float: right;
+	color: #fff;
+	opacity: 0.5;
+	margin-right: 0.14rem;
+}
+/* -----------------------------------------------------header结束 */
+/* -----------------------------------------------------section开始 */
+/* -----------------------------------------------------section-swiper开始 */
+.swiper-container {
+	width: 99%;
+	height: 4.2rem;
+	overflow: hidden;
+	margin: 0 auto;
+	border: 2px solid #ccc;
+}
+.swiper-wrapper {
+	width: 100%;
+}
+.swiper-container > .swiper-wrapper > .swiper-slide {
+	width: 100%;
+	float: left;
+	position: relative;
+	height: 100%;
+}
+.swiper-slide > img {
+	width: 100%;
+	height: 100%;
+}
+/* -----------------------------------------------------section-swiper结束 */
+/* -----------------------------------------------------section-player开始 */
+
+section {
+	width: 100%;
+	overflow: auto;
+	flex-shrink: 1;
+	flex-grow: 1;
+}
+section > .player {
+	width: 80%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.2rem;
+	border: 1px solid #ccc;
+	padding: 0.3rem 0.5rem;
+	box-shadow: 2px 1px 5px 1px #ccc inset;
+	border-right: none;
+	border-bottom: none;
+}
+section > .player > a {
+	font-size: 0.5rem;
+	color: #333;
+	opacity: 0.7;
+}
+/* -----------------------------------------------------section-player结束 */
+/* -----------------------------------------------------section-article开始 */
+section > article {
+	width: 100%;
+	margin-top: 0.2rem;
+	border-bottom: 0.2rem solid #f8f8f8;
+}
+section > article > a > .top {
+	margin-bottom: 0.14rem;
+}
+section > article > a > .top > .logo {
+	float: left;
+}
+section > article > a > .top > .logo > span {
+	font-size: 0.2rem;
+	display: block;
+	margin-left: 0.24rem;
+	border-left: 2px solid teal;
+	padding-left: 0.1rem;
+	color: teal;
+}
+section > article > a > .top > .uesr {
+	float: right;
+	margin-right: 0.24rem;
+}
+section > article > a > .top > .uesr > span {
+	font-size: 0.2rem;
+	display: block;
+	float: left;
+	margin-right: 0.1rem;
+	line-height: 0.5rem;
+	color: #000;
+}
+section > article > a > .top > .uesr > img {
+	width: 0.5rem;
+	display: block;
+	float: left;
+}
+section > article > a > .mid > .word {
+	width: 50%;
+	float: left;
+	margin-left: 0.24rem;
+}
+section > article > a > .mid > .word > h3 {
+	font-size: 0.36rem;
+	font-weight: bolder;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	color: #000;
+}
+section > article > a > .mid > .word > p {
+	font-size: 0.2rem;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	color: #868686;
+}
+section > article > a > .mid > .pic {
+	width: 40%;
+	float: right;
+	margin-right: 0.24rem;
+}
+section > article > a > .mid > .pic > img {
+	width: 100%;
+}
+section > article > a > .buttom {
+	width: 100%;
+}
+section > article > a > .buttom > .time {
+	font-size: 0.1rem;
+	color: #c0c0c0;
+	float: left;
+	margin-left: 0.24rem;
+}
+section > article > a > .buttom > .read {
+	float: right;
+	margin-right: 0.24rem;
+}
+section > article > a > .buttom > .read > i {
+	font-size: 0.2rem;
+	display: block;
+	float: left;
+	color: #c0c0c0;
+	margin-right: 0.1rem;
+}
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.2rem 0;
+	background-color: #fff;
+	flex-shrink: 0;
+}
+footer > a > img {
+	width: 0.5rem;
+	height: 0.8rem;
+}
+footer > a:first-child > img {
+	margin-left: 0.5rem;
+}
+footer > a:last-child > img {
+	margin-right: 0.5rem;
+}
+footer > a:nth-child(3) > img {
+	width: 0.8rem;
+}

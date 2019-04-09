@@ -1,0 +1,101 @@
+body {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a {
+	outline: none;
+	outline-style: none;
+}
+.wrap {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+}
+.wrap > header {
+	width: 100%;
+	position: relative;
+	overflow: auto;
+	flex-shrink: 1;
+	flex-grow: 1;
+}
+.wrap > header > .banner {
+	position: relative;
+}
+.wrap > header > .banner > img {
+	width: 100%;
+}
+.wrap > header > .banner > a {
+	position: absolute;
+	top: 0.5rem;
+	font-size: 0.4rem;
+	color: #fff;
+	text-decoration: none;
+}
+.wrap > header > .banner > .return {
+	left: 0.5rem;
+}
+.wrap > header > .banner > .see {
+	display: block;
+	padding: 0.1rem 0.2rem;
+	border: 1px solid teal;
+	border-radius: 0.3rem;
+	font-size: 0.2rem;
+	right: 0.5rem;
+}
+.wrap > header > .banner > .see:nth-child(4) {
+	display: none;
+	background-color: teal;
+}
+.wrap > header > .banner > .head {
+	position: absolute;
+	bottom: -1rem;
+	right: 0.3rem;
+	text-align: center;
+}
+.wrap > header > .banner > .head > img {
+	border-radius: 50%;
+	width: 1.5rem;
+}
+.wrap > header > .banner > .head > p {
+	font-size: 0.3rem;
+	color: teal;
+}
+.wrap > header > p {
+	font-size: 0.2rem;
+	display: block;
+	margin-left: 0.24rem;
+	border-left: 2px solid teal;
+	padding-left: 0.1rem;
+	color: teal;
+}
+.wrap > header > .content {
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+.wrap > header > .content > h3 {
+	width: 3rem;
+	font-size: 0.5rem;
+}
+.wrap > header > .content > time {
+	font-size: 0.2rem;
+	display: block;
+	margin-top: 0.2rem;
+}
+.wrap > header > .content > p {
+	font-size: 0.34rem;
+	line-height: 0.5rem;
+}
+.wrap > footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 0.2rem;
+	flex-shrink: 0;
+}
+.wrap > footer > a {
+	font-size: 0.4rem;
+	color: teal;
+}

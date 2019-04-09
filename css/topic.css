@@ -1,0 +1,178 @@
+.wrap {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+}
+header {
+	flex-shrink: 0;
+	width: 100%;
+	background: linear-gradient(#1e9496, #36f0bf);
+	z-index: 10000;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.3rem 0;
+}
+header > .dynamic {
+	font-size: 0.3rem;
+	color: #d7faf2;
+	margin-left: 2rem;
+	text-align: center;
+	text-decoration: none;
+}
+header > .dynamic > p {
+	font-size: 0.1rem;
+}
+header > .chat {
+	font-size: 0.3rem;
+	color: #109a7e;
+	margin-right: 2rem;
+	text-align: center;
+	text-decoration: none;
+}
+header > .chat > p {
+	font-size: 0.1rem;
+}
+section {
+	width: 100%;
+	overflow: auto;
+	flex-shrink: 1;
+	flex-grow: 1;
+}
+.swiper-container {
+	width: 100%;
+	height: 4.2rem;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.swiper-wrapper {
+	width: 100%;
+}
+.swiper-container > .swiper-wrapper > .swiper-slide {
+	width: 100%;
+	float: left;
+	position: relative;
+	height: 100%;
+}
+.swiper-slide > img {
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide > span {
+	color: white;
+	font-size: 0.2rem;
+	display: block;
+	background-color: rgb(16, 196, 196);
+	position: absolute;
+	bottom: 0.3rem;
+	right: 0rem;
+	padding: 0.1rem 0.3rem;
+	border-top-left-radius: 0.25rem;
+	border-bottom-left-radius: 0.25rem;
+}
+.swiper-slide > p {
+	color: white;
+	font-size: 0.2rem;
+	display: block;
+	background-color: #ccc;
+	position: absolute;
+	top: 0.3rem;
+	right: 0.3rem;
+	padding: 0 0.1rem;
+}
+section > article {
+	width: 100%;
+	margin-top: 0.2rem;
+	border-top: 0.2rem solid #f8f8f8;
+	padding-top: 0.3rem;
+}
+section > article > .top {
+	margin-bottom: 0.14rem;
+	width: 90%;
+	margin: 0 auto;
+}
+section > article > .top > img {
+	width: 0.6rem;
+	float: left;
+	margin-right: 0.2rem;
+}
+section > article > .top > span {
+	float: left;
+	display: block;
+	font-size: 0.3rem;
+	color: rgb(27, 211, 211);
+	line-height: 0.7rem;
+}
+section > article > .mid {
+	width: 90%;
+	margin: 0 auto;
+}
+section > article > .mid > .word {
+	width: 100%;
+	margin-bottom: 0.3rem;
+}
+section > article > .mid > .word > h3 {
+	font-size: 0.36rem;
+	font-weight: bolder;
+	overflow: hidden;
+	-webkit-line-clamp: 2;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	color: #000;
+	margin-bottom: 0.4rem;
+}
+section > article > .mid > .word > p {
+	font-size: 0.2rem;
+	overflow: hidden;
+	-webkit-line-clamp: 3;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	text-overflow: ellipsis;
+	color: #868686;
+	line-height: 0.4rem;
+}
+section > article > .buttom {
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 0.3rem;
+}
+section > article > .buttom > .time {
+	font-size: 0.1rem;
+	color: #c0c0c0;
+	float: left;
+}
+section > article > .buttom > .read {
+	float: right;
+}
+section > article > .buttom > .read > i {
+	font-size: 0.2rem;
+	display: block;
+	float: left;
+	color: #c0c0c0;
+	margin-right: 0.1rem;
+}
+footer {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.2rem 0;
+	background-color: #fff;
+	flex-shrink: 0;
+}
+footer > a > img {
+	width: 0.5rem;
+	height: 0.8rem;
+}
+footer > a:first-child > img {
+	margin-left: 0.5rem;
+}
+footer > a:last-child > img {
+	margin-right: 0.5rem;
+}
+footer > a:nth-child(3) > img {
+	width: 0.8rem;
+}

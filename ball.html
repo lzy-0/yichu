@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/in.css" />
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="./css/ball.css" />
+    <script>
+      document.documentElement.style.fontSize =
+        document.documentElement.clientWidth / 7.5 + 'px'
+    </script>
+	</head>
+	<body>
+    <div class="warp1"></div>
+    <div class="wrap">
+      <header>
+        <div class="content">
+          <a href="./my.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></a>
+          <a href="">钱包</a>
+          <a href="">明细</a>
+        </div>
+      </header>
+      <section>
+        <div class="aleat">
+          <div class="top">
+            <p>请输入您要充值的金额(元)</p>
+          </div>
+          <div class="mid">
+            <input type="text">
+            <a>确定</a>
+          </div>
+        </div>
+        <img src="./images/_03.png" alt="">
+        <a class="money">￥充值</a>
+        <a>￥提现</a>
+      </section>
+      <footer>
+        <div class="top">
+          <p>零钱可以用于用户与用户之间收听回答或购买实体商品。在使用过程中一处不会收取任何费用</p>
+        </div>
+        <div class="down">
+          <div class="down-1">
+            <p>红包活动</p>
+            <p>|</p>
+            <p>常见问题</p>
+          </div>
+          <div class="down-2">
+            <p>本活动由财付通提供底层技术支持</p>
+          </div>
+        </div>
+      </footer>
+      <script src="./js/zepto.min.js"></script>
+      <script src="./js/touch.js"></script>
+      <script src="./js/fx.js"></script>
+      <script src="./js/fxmod.js"></script>
+      <script>
+        $("section>.money").tap(function () {
+          $("section>.aleat").css('display','block')
+        })
+        $("section>.aleat>.mid>a").tap(function () {
+            $("section>.aleat").css('display', 'none')
+        })
+      </script>
+  </body>
+</html>

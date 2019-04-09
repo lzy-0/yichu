@@ -1,0 +1,76 @@
+body {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+a {
+	outline: none;
+	outline-style: none;
+}
+.wrap {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	top: 0;
+	background: linear-gradient(teal, white);
+}
+.wrap > .top {
+	width: 95%;
+	margin: 0 auto;
+}
+.wrap > .top > input {
+	width: 75%;
+	background: url(../images/serch_03.jpg) no-repeat;
+	background-position: 0.1rem center;
+	background-size: 0.4rem;
+	background-color: #ebedec;
+	padding: 0.1rem 0 0.1rem 0.6rem;
+	border-radius: 0.1rem;
+}
+.wrap > .top > input:focus {
+	outline: none;
+}
+.wrap > .top > a {
+	font-size: 0.34rem;
+	text-decoration: none;
+	color: white;
+}
+.wrap > .btn,
+.wrap > .his {
+	width: 95%;
+	margin: 0 auto;
+	margin-top: 0.2rem;
+}
+.wrap > .btn > button {
+	width: 47.5%;
+	padding: 0.2rem 0;
+	border-radius: 0.2rem;
+	display: block;
+	float: left;
+	border: none;
+}
+.wrap > .btn > button:focus {
+	outline: none;
+}
+.wrap > .btn > .btn1 {
+	margin-right: 5%;
+	background-color: rgb(125, 248, 248);
+}
+.wrap > .btn > .btn2 {
+	background-color: #fff;
+}
+.wrap > .his {
+	margin-top: 1.2rem;
+	opacity: 0.6;
+}
+.wrap > .his > a {
+	text-decoration: none;
+	color: rgb(231, 219, 219);
+	font-size: 0.3rem;
+	display: block;
+	font-weight: lighter;
+	border-bottom: 1px solid #ccc;
+	padding: 0.3rem 0.3rem;
+}
+.wrap > .his > a > i {
+	margin-right: 0.3rem;
+	font-size: 0.5rem;
+}

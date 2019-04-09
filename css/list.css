@@ -1,0 +1,97 @@
+.wrap {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+}
+header {
+	flex-shrink: 0;
+	width: 100%;
+	background: linear-gradient(#1e9496, #36f0bf);
+	z-index: 10000;
+	padding: 0.3rem 0;
+}
+header > div {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header > div > a {
+	font-size: 0.3rem;
+	color: teal;
+	text-decoration: none;
+}
+header > div > span {
+	font-size: 0.3rem;
+	margin: 0 auto;
+	color: teal;
+}
+header > div > span:nth-child(2) {
+	border-bottom: 2px solid teal;
+}
+section {
+	width: 100%;
+	overflow: auto;
+	flex-shrink: 1;
+	flex-grow: 1;
+	background-color: rgb(245, 241, 241);
+}
+section > .user {
+	width: 100%;
+	background-color: #fff;
+	padding-top: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+section > .user > .top {
+	width: 90%;
+	margin: 0 auto;
+}
+section > .user > .top > img {
+	width: 0.8rem;
+	float: left;
+	margin-right: 0.1rem;
+}
+section > .user > .top > span {
+	font-size: 0.3rem;
+	float: left;
+	margin-right: 0.2rem;
+	margin-top: 0.2rem;
+}
+section > .user > .top > a {
+	float: left;
+	font-size: 0.2rem;
+	color: #ccc;
+	margin-top: 0.26rem;
+}
+section > .user > .mid {
+	width: 90%;
+	margin: 0 auto;
+
+	margin-top: 0.3rem;
+}
+section > .user > .mid > span {
+	font-size: 0.4rem;
+	font-family: serif;
+	display: block;
+}
+section > .user > .down {
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.2rem;
+	padding-bottom: 0.2rem;
+}
+section > .user > .down > a {
+	font-size: 0.3rem;
+	text-decoration: none;
+	color: #ccc;
+}
+section > .user > .down > span {
+	font-size: 0.3rem;
+	color: #ccc;
+}
